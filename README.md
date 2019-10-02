@@ -14,12 +14,21 @@
 * And a deposit of 2000 on 13-01-2012
 * And a withdrawal of 500 on 14-01-2012
 * When she prints her bank statement
-* Then she would see
+* Then she would see (add photo here)
 
 <h3 align="center"> My Steps </h3>
 
 * In order to make a deposit a client must have an account with a balance of zero (0)
+* Once an account with 0 balance is open, allow for depsoit
 
 <h3 align="center"> Running this project </h3>
 
-* Clone this repo and run bundle install to get started. 
+* Clone this repo and run bundle install to get started.
+
+<h3 align="center"> Running this project in irb </h3>
+
+* In terminal run *irb* in the project directory
+* Then run *require './lib/account' and you should get *true*
+* Type *account = Account.new* this should give you a new account instance with a 0 balance
+* Type *account.deposit(1000)* which should deposit 1000 to the account
+* Type *account.withdrawal(500)* which should withdraw 500 from the 3000 balance

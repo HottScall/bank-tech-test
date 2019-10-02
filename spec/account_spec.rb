@@ -11,4 +11,15 @@ describe Account do
     end
   end
 
+  describe 'withdrawal' do
+    it 'allows for withdrawals to be made' do
+      expect {subject.withdrawal 1}.to change { subject.balance }.by (-1)
+    end
+  end
+
+  describe '#withdrawal' do
+    it 'allows for withdrawals to be made' do
+    end
+  end
+
 end
