@@ -5,5 +5,10 @@ describe Account do
     expect(subject.balance).to eq(0)
   end
 
+  describe '#deposit' do
+    it 'allows for deposits to be made' do
+      expect {subject.deposit 1}.to change{ subject.balance}.by (1)
+    end
+  end
 
 end
