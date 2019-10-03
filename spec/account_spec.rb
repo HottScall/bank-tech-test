@@ -17,8 +17,9 @@ describe Account do
     end
   end
 
-  describe '#withdrawal' do
-    it 'allows for withdrawals to be made' do
+  describe 'date' do
+    it 'shows the predetermined date' do
+      expect(subject.date).to eq "14/01/2012"
     end
   end
 

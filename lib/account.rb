@@ -14,4 +14,10 @@ class Account
     @balance -= amount
   end
 
+  def date
+    "14/01/2012"
+  end
+
+
+
 end
